@@ -7,11 +7,36 @@
     <groupId>za.co.wethinkcode</groupId>
     <artifactId>fizzbuzz</artifactId>
     <version>1.0-SNAPSHOT</version>
+         
+    <scm>
+        <developerConnection>
+            scm:git:https://github.com/tmngomez/my_project.git
+        </developerConnection>
+    </scm>
+
+    <settings>
+        <servers>
+            <server>
+                <id>github</id>
+                <username>tmngomez</username>
+                <password>ThandekaZokosana</password>
+            </server>
+        </servers>
+    </settings>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>Github</name>
+            <url>https://maven.pkg.github.com/tmngomez/my_project</url>
+        </repository>
+    </distributionManagement>
 
     <properties>
         <maven.compiler.target>11</maven.compiler.target>
         <maven.compiler.source>11</maven.compiler.source>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.scm.id>github</project.scm.id>
     </properties>
 
     <dependencies>
