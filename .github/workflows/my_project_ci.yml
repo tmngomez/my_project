@@ -16,9 +16,9 @@ jobs:
         with:
           java-version: 11.0.1
 
-      - name: "Compiling Code"
-        run: mvn compile
+#       - name: "Compiling Code"
+#         run: mvn compile
 
-      - name: "Running Unittests"
-        run: mvn test
+#       - name: "Running Unittests"
+#         run: mvn test
 
